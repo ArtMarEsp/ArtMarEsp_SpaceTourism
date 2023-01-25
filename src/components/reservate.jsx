@@ -5,10 +5,6 @@ import emailjs from 'emailjs-com';
 
 const ReservateComponent = () => {
 
-    function makeClick(res) {
-        console.log('Make click');
-    }
-
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -16,7 +12,7 @@ const ReservateComponent = () => {
 
         emailjs.sendForm('service_uajorcw', 'template_fbt5xx3', form.current, 'f0ofoNw8X5bVKvP8P') //  
             .then((result) => {
-                console.log(result.text);
+                window.location.reload(false);
             }, (error) => {
                 console.log(error.text);
             });
