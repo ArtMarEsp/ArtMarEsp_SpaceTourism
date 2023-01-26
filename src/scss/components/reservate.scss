@@ -108,36 +108,38 @@ $bold: 600;
     .form {
       .subject-p {
         margin-top: -10px;
+
         #subject {
           width: 50%;
           height: 3vw;
         }
       }
-  
+
       .email-p {
         #email {
           width: 50%;
           height: 3vw;
         }
       }
-      
+
       .des_res-p {
         #des_res {
           width: 50%;
           height: 3vw;
         }
       }
-      
+
       .comment-p {
         #comment {
           width: 50%;
           height: 6vw;
         }
       }
-      
-  
+
+
       .button-form {
         position: relative;
+
         .button-send {
           align-items: center;
           text-align: center;
@@ -154,7 +156,7 @@ $bold: 600;
           text-transform: uppercase;
           font-family: "Barlow Condensed", sans-serif;
           margin: 0;
-  
+
           &:hover {
             transform: scale(1.25);
             box-shadow: 0px 0px 15px rgb(255, 255, 255);
@@ -163,98 +165,111 @@ $bold: 600;
       }
     }
 
-    
+
 
   }
 }
 
 //phone 
 @media (max-width: 450px) {
-  .title {
-    h1 {
-      // width: 80%;
-      // font-family: "Bellefair", serif;
-      font-family: "Barlow", sans-serif;
-      margin: 0;
-      padding: 0em;
-      font-size: 8vw;
-      color: #fff;
-      // margin-bottom: 2vw;
-      // text-align: center;
-    }
-  }
-
-
-  .reservate-form {
-    text-align: center;
-    align-items: center;
-    background-color: rgba(72, 72, 72, 0.4);
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 10px;
-    padding-bottom: 50px;
+  .reservate {
     width: 100%;
-    height: 300px;
-    margin-top: 0px;
-    // margin-left: 20px; 
 
-    .form {
-      .subject-p {
-        #subject {
-          width: 50%;
-          height: 8vw;
-        }
+    .title {
+      h1 {
+        // width: 80%;
+        // font-family: "Bellefair", serif;
+        font-family: "Barlow", sans-serif;
+        margin: 0;
+        padding: 0em;
+        font-size: 8vw;
+        color: #fff;
+        // margin-bottom: 2vw;
+        // text-align: center;
       }
-  
-      .email-p {
-        #email {
-          width: 50%;
-          height: 8vw;
-        }
-  
-      }
-  
-      .des_res-p {
-        #des_res {
-          width: 50%;
-          height: 8vw;
-        }
-      }
-  
-      .comment-p {
-        #comment {
-          width: 50%;
-          height: 20vw;
-        }
-      }
-  
-      .button-form {
-        position: relative;
-        .button-send {
+    }
+
+
+    .reservate-form {
+      // text-align: center;
+      // align-items: center;
+      background-color: rgba(72, 72, 72, 0.4);
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-top: 10px;
+      padding-bottom: 50px;
+      width: 101%;
+      height: 300px;
+      margin-top: 0px;
+
+      .form {
+        margin-top: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        align-items: center;
+        text-align: center;
+        width: 105%;
+
+        .subject-p {
           align-items: center;
           text-align: center;
-          right: 30%;
-          width: 35%;
-          height: 5%;
-          background-color: #fff;
-          padding: 2em;
-          transition: 0.5s;
-          font-family: "Bellefair", serif;
-          font-size: 4vw;
-          font-weight: $bold;
-          text-transform: uppercase;
-          font-family: "Barlow Condensed", sans-serif;
-          margin: 0;
-  
-          &:hover {
-            transform: scale(1.25);
-            box-shadow: 0px 0px 15px rgb(255, 255, 255);
+          margin-right: 0%;
+          display: block;
+          #subject {
+            width: 50%;
+            height: 8vw;
+          }
+        }
+
+        .email-p {
+          #email {
+            width: 50%;
+            height: 8vw;
+          }
+
+        }
+
+        .des_res-p {
+          #des_res {
+            width: 50%;
+            height: 8vw;
+          }
+        }
+
+        .comment-p {
+          #comment {
+            width: 50%;
+            height: 20vw;
+          }
+        }
+
+        .button-form {
+          position: relative;
+
+          .button-send {
+            align-items: center;
+            text-align: center;
+            right: 30%;
+            width: 40%;
+            height: 6vw;
+            background-color: #fff;
+            padding: 2em;
+            transition: 0.5s;
+            font-family: "Bellefair", serif;
+            font-size: 4vw;
+            font-weight: $bold;
+            text-transform: uppercase;
+            font-family: "Barlow Condensed", sans-serif;
+            margin: 0;
+
+            &:hover {
+              transform: scale(1.25);
+              box-shadow: 0px 0px 15px rgb(255, 255, 255);
+            }
           }
         }
       }
     }
-
-    
-
   }
+
 }

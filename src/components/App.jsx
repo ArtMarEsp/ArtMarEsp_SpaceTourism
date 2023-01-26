@@ -7,6 +7,7 @@ import DestinationComponent from "./destination";
 import CrewComponent from "./crew";
 import TechnologyComponent from "./technology"
 import ReservateComponent from "./reservate";
+import ThankYouComponent from "./thankyou";
 //Data
 import data_json from "./data.json"
 // Styles
@@ -37,6 +38,9 @@ const App = () => {
             </Route>
             <Route path="/reservate">
                 <ReservateComponent />
+            </Route>
+            <Route path="/thankyou">
+                <ThankYouComponent />
             </Route>
         </div>
     );

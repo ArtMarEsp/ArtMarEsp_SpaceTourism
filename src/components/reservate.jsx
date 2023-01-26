@@ -1,18 +1,20 @@
 // import e from "express";
 import React, { useRef } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import emailjs from 'emailjs-com';
 
 const ReservateComponent = () => {
 
     const form = useRef();
 
+    const routerHistory = useHistory(); 
+
     const sendEmail = (e) => {
         e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
 
         emailjs.sendForm('service_uajorcw', 'template_fbt5xx3', form.current, 'f0ofoNw8X5bVKvP8P') //  
             .then((result) => {
-                window.location.reload(false);
+                routerHistory.push('/thankyou');
             }, (error) => {
                 console.log(error.text);
             });
